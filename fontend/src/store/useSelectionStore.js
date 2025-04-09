@@ -5,9 +5,13 @@ const useSelectionStore = create((set) => ({
   selectedConnection: "Shear Connection",
   setSelectedConnection: (value) => set({ selectedConnection: value }),
 
-  // 2nd state: selectedMomentConnection
-  selectedMomentConnection: "Beam-to-Beam Splice",
-  setSelectedMomentConnection: (value) => set({ selectedMomentConnection: value }),
+  // 2nd state: outputdata beam to beam end plate connection
+  outputData: {},
+  setOutputData: (value) => set({outputData: value}),
+
+  //3rd state: mainMode
+  mainMode: "",
+  setMainMode: (value) => set({ mainMode: value }),
 }));
 
 export default useSelectionStore;

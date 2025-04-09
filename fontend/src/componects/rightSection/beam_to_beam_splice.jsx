@@ -3,6 +3,7 @@ import RightHeadBtn from './rightHeadBtn';
 import coverPlateBoltedImg from '../../assets/cover-plate-bolted.png'
 import coverPlateWeldedImg from '../../assets/cover-plate-welded.png'
 import monentEndPlateImg from '../../assets/moment-end-plate.png'
+import { Link } from 'react-router-dom';
 
 const options = [
     {
@@ -54,7 +55,9 @@ function Beam_to_beam_splice() {
             </div>
         </div>
         <div className='w-full flex justify-center items-center h-14'>
-            <button className='bg-[#925A5B] h-fit w-48 rounded-sm p-1 px-3 text-white'>Start</button>
+          <Link to="/beamToBeamEndPlate">
+          <button className='bg-[#925A5B] h-fit w-48 rounded-sm p-1 px-3 text-white'>Start</button>
+          </Link>
         </div>
     </div>
   )
